@@ -30,7 +30,7 @@ body{
 }
 
 .top_bar{
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100rem;
     height: 4rem;
@@ -61,72 +61,57 @@ body{
     padding: 10px;
 }
 
-.menu_lineas{
-    height: 50%;
-    left: 0;
-}
-
 .right_top{
     width: 30%;
     left: 0;
 }
 
-/*.app {
-    width: 100%;
-    height: 100%;
-  
-    display: grid;
-    grid:
-      "header" auto
-      "main" auto
-      "catalog" auto
-      "footer" 1fr
-      / 1fr;
-    gap: 4px;
-}*/
-
-/*.app{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 8px;
-    align-items: center;
-}
-  
-/*.header { 
-    grid-area: header; 
-    position: sticky;
-    width: 100%;
-    height: 7.5%;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}/*
-.main { grid-area: main; }
-.catalog { grid-area: catalog; align-items: center;}
-.footer { grid-area: footer; }*/
-
-
 
 .menu_lineas{
-    z-index: 1;
+    z-index: 4;
     cursor: pointer; 
+    position: absolute;
+    height: 10%;
+    left: -2.5%;
 }
 
 .menu_text{
-    z-index: 1;
+    z-index: 3;
     cursor: pointer;
+    font-size: small;
+    position: absolute;
+    left: 0%;
 }
 
 .perfil{
     z-index: 1;
     cursor: pointer;
+    position: absolute;
+    top: 20%;
+    left: 80%;
 }
 
 .bag{
     z-index: 1;
     cursor: pointer;
+    position: absolute;
+    top: 20%;
+    left: 82.5%;
+}
+
+.main{
+    display: flex;
+    height: 40%;
+}
+
+.catalog{
+    display: flex;
+}
+
+.logo{
+    position: absolute;
+    top: 20%;
+    position: absolute;
+    left: 40%;
+    height: auto;
 }
