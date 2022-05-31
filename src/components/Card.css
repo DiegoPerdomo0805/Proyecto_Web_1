@@ -1,0 +1,28 @@
+.img_cont img{
+    max-width: 250px;
+    max-height: 250px;
+    align-items: center;
+}
+
+.prod_cont{
+    width: 250px;
+    min-height: 320px;
+    max-height: 340px;
+    overflow: hidden;
+    background-color: black;
+    cursor: pointer;
+}
+
+.card_price{
+    color: aliceblue;
+    font-size: small;
+}
+
+.card_name{
+    font-size: 15px;
+}
+
+.prod_cont:hover{
+    opacity: 0.5;
+    transition-duration: 1.5s;
+}
